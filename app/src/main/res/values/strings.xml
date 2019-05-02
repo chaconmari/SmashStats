@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Smash Stats</string>
+    <string name="title_activity_add">Add</string>
+    <string name="title_activity_add_fight">AddFight</string>
+    <string name="title_activity_edit_fight">EditFight</string>
+    <string name="title_activity_stage">StageActivity</string>
+    <string name="title_activity_character">CharacterActivity</string>
+
+    <string-array name="character_array">
+        <item>Bayonetta</item>
+        <item>Bowser</item>
+        <item>Bowser Jr.</item>
+        <item>Captain Falcon</item>
+        <item>Chrom</item>
+        <item>Cloud</item>
+        <item>Corrin</item>
+        <item>Daisy</item>
+        <item>Dark Pit</item>
+        <item>Dark Samus</item>
+        <item>Diddy Kong</item>
+        <item>Donkey Kong</item>
+        <item>Dr. Mario</item>
+        <item>Duck Hunt</item>
+        <item>Falco</item>
+        <item>Fox</item>
+        <item>Ganandorf</item>
+        <item>Greninja</item>
+        <item>The Ice Climbers</item>
+        <item>Ike</item>
+        <item>Inkling</item>
+        <item>Jigglypuff</item>
+        <item>King Dedede</item>
+        <item>King K. Rool</item>
+        <item>Kirby</item>
+        <item>Link</item>
+        <item>Little Mac</item>
+        <item>Lucario</item>
+        <item>Lucas</item>
+        <item>Lucina</item>
+        <item>Luigi</item>
+        <item>Mario</item>
+        <item>Marth</item>
+        <item>Mega Man</item>
+        <item>Meta Knight</item>
+        <item>Mewtwo</item>
+        <item>Mii Brawler</item>
+        <item>Mii Gunner</item>
+        <item>Mii Fighter</item>
+        <item>Mr.Game n Watch</item>
+        <item>Ness</item>
+        <item>Captain Olimar</item>
+        <item>Pac-Man</item>
+        <item>Palutena</item>
+        <item>Peach</item>
+        <item>Pikachu</item>
+        <item>Pit</item>
+        <item>Pokemon Trainer</item>
+        <item>Richter</item>
+        <item>R.O.B. the robot</item>
+        <item>Robin</item>
+        <item>Rosalina</item>
+        <item>Roy</item>
+        <item>Ridley</item>
+        <item>Ryu</item>
+        <item>Samus</item>
+        <item>Sheik</item>
+        <item>Shulk</item>
+        <item>Simon Belmont</item>
+        <item>Solid Snake</item>
+        <item>Sonic</item>
+        <item>Toon Link</item>
+        <item>Villager</item>
+        <item>Wario</item>
+        <item>Wii Fit Trainer</item>
+        <item>Wolf</item>
+        <item>Yoshi</item>
+        <item>Young Link</item>
+        <item>Zelda</item>
+        <item>Zero Suit Samus</item>
+    </string-array>
+
+    <string-array name="stage_array">
+        <item>Big Blue</item>
+        <item>Castle Siege</item>
+        <item>Corneria</item>
+        <item>Eldin Bridge</item>
+        <item>Fourside</item>
+        <item>Frigate Orpheon</item>
+        <item>Great Bay</item>
+        <item>Green Greens</item>
+        <item>Green Hill Zone</item>
+        <item>Hyrule Castle</item>
+        <item>Kongo Jungle</item>
+        <item>Luigi's Mansion</item>
+        <item>Lylat Cruise</item>
+        <item>Mario Circuit</item>
+        <item>Mushroomy Kingdom</item>
+        <item>New Pork City</item>
+        <item>Onett</item>
+        <item>Peach's Castle</item>
+        <item>Pictochat</item>
+        <item>Pokemon Stadium 2</item>
+        <item>Port Town Aero Drive</item>
+        <item>Shadow Moses Island</item>
+        <item>Skyworld</item>
+        <item>Smashville</item>
+        <item>Spear Pillar</item>
+        <item>Subcon</item>
+        <item>Summit</item>
+        <item>Temple</item>
+        <item>WarioWare Inc</item>
+        <item>Yoshi's Island</item>
+        <item>Yoshi's Story</item>
+    </string-array>
+</resources>
