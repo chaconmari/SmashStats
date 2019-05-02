@@ -91,13 +91,13 @@
         <item>Green Hill Zone</item>
         <item>Hyrule Castle</item>
         <item>Kongo Jungle</item>
-        <item>Luigi's Mansion</item>
+        <item>Luigis Mansion</item>
         <item>Lylat Cruise</item>
         <item>Mario Circuit</item>
         <item>Mushroomy Kingdom</item>
         <item>New Pork City</item>
         <item>Onett</item>
-        <item>Peach's Castle</item>
+        <item>Peachs Castle</item>
         <item>Pictochat</item>
         <item>Pokemon Stadium 2</item>
         <item>Port Town Aero Drive</item>
@@ -109,7 +109,8 @@
         <item>Summit</item>
         <item>Temple</item>
         <item>WarioWare Inc</item>
-        <item>Yoshi's Island</item>
-        <item>Yoshi's Story</item>
+        <item>Yoshis Island</item>
+        <item>Yoshis Story</item>
     </string-array>
+    <string name="title_activity_pie_chart">PieChartActivity</string>
 </resources>

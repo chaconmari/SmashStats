@@ -1,4 +1,5 @@
-<LinearLayout android:orientation="vertical"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -19,52 +20,168 @@
             android:text="All time Statistics"
             android:textSize="22dp"/>
 
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Total plays:"/>
+            android:text="Total plays: "/>
 
+            <TextView
+                android:id="@+id/totalPlays"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Best character:"/>
+            android:text="Best character: "/>
 
+            <TextView
+                android:id="@+id/bestCharacter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Marth" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Worst character"/>
+            android:text="Worst character:"/>
 
+            <TextView
+                android:id="@+id/worstCharacter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Link" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Best opponent:"/>
+
+            <TextView
+                android:id="@+id/bestOpponent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Lucas" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Worst opponent:"/>
+
+            <TextView
+                android:id="@+id/worstOpponent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Roy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Best Stage:"/>
 
+            <TextView
+                android:id="@+id/bestStage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Hyrule Castle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Worst Stage:"/>
+
+            <TextView
+                android:id="@+id/worstStage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Battlefield" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -73,7 +190,10 @@
         android:layout_weight="0.1"
         android:layout_height="0dp"
         android:layout_width="fill_parent">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"/>
         <View
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
@@ -97,12 +217,6 @@
             android:text="Weekly Play Time"
             android:textSize="22dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bar1"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"/>
 
     </LinearLayout>
 
@@ -122,13 +236,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_weight="1"
         android:layout_height="0dp"
         android:layout_width="fill_parent">
 
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
+
+
+            <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
@@ -146,8 +267,28 @@
             android:textAlignment="center"
             android:text="Stages"
             android:textSize="22dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
 
 
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartStage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
 
     </LinearLayout>
 

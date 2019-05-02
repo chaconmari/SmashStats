@@ -30,8 +30,7 @@
             android:id="@+id/spinnerStage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/stage_array"
-            android:prompt="Choose Stage">
+            android:entries="@array/stage_array">
         </Spinner>
 
 
@@ -53,8 +52,7 @@
             android:id="@+id/spinnerCharacter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/character_array"
-            android:prompt="Choose Character">
+            android:entries="@array/character_array">
         </Spinner>
 
 
@@ -76,8 +74,7 @@
             android:id="@+id/spinnerOpponent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/character_array"
-            android:prompt="Choose Character">
+            android:entries="@array/character_array">
         </Spinner>
 
 
