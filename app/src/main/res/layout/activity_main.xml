@@ -208,14 +208,21 @@
         android:layout_weight="1"
         android:layout_height="0dp"
         android:layout_width="fill_parent">
+
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView10"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".1"
             android:textAlignment="center"
-            android:text="Weekly Play Time"
+            android:text="Players"
             android:textSize="22dp"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
 
     </LinearLayout>
@@ -241,54 +248,21 @@
         android:layout_height="0dp"
         android:layout_width="fill_parent">
 
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight=".2"
-            android:layout_height="0dp"
-            android:layout_width="fill_parent">
-
-
-            <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:text="Players"
-            android:textSize="22dp"/>
-
-
         <TextView
             android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
             android:textAlignment="center"
             android:text="Stages"
             android:textSize="22dp"/>
-        </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="0dp"
-            android:layout_width="fill_parent">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechartStage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/piechartPlayer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-
-            <com.github.mikephil.charting.charts.PieChart
-                android:id="@+id/piechartStage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
 
     </LinearLayout>
 

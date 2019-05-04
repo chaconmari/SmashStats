@@ -1,31 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StageActivity">
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_width="fill_parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <ImageView
+            android:id="@+id/image"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="0.75"
+            android:layout_gravity="center"
+            android:src="@drawable/mushroom_kingdom"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
 
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_width="fill_parent">
 
-</android.support.design.widget.CoordinatorLayout>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Total plays: "/>
+
+        <TextView
+            android:id="@+id/totalPlays"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Best character: "/>
+
+        <TextView
+            android:id="@+id/bestCharacter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Marth" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Worst character:"/>
+
+        <TextView
+            android:id="@+id/worstCharacter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Link" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Best opponent:"/>
+
+        <TextView
+            android:id="@+id/bestOpponent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lucas" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Worst opponent:"/>
+
+        <TextView
+            android:id="@+id/worstOpponent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Roy" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:paddingTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Players"
+                android:textSize="22dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent">
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechartPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         pieChartStage.setUsePercentValues(true);
         pieChartStage.setTransparentCircleRadius(5f);
         pieChartStage.setEntryLabelColor(Color.BLACK);
-        pieChartPlayer.getDescription().setEnabled(false);
+        pieChartStage.getDescription().setEnabled(false);
 
 
         //Array for PieChart Player
@@ -103,6 +103,19 @@ public class MainActivity extends AppCompatActivity {
             }
             @Override
             public void onNothingSelected() {
+            }
+        });
+
+        pieChartStage.setOnChartValueSelectedListener(new OnChartValueSelectedListener() {
+            @Override
+            public void onValueSelected(Entry entry, Highlight highlight) {
+                Intent i = new Intent(MainActivity.this, StageActivity.class);
+                startActivity(i);
+            }
+
+            @Override
+            public void onNothingSelected() {
+
             }
         });
     }

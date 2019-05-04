@@ -1,5 +1,6 @@
 package cs4330.cs.utep.edu.smashstats;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -30,8 +31,16 @@ public class PieChartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pie_chart);
         final PieChart pieChart = findViewById(R.id.piechart);
-        TextView textView = findViewById(R.id.textview);
         ImageView mImageView = findViewById(R.id.image);
+
+        mImageView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(PieChartActivity.this, CharacterActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleRadius(30f);
@@ -121,6 +130,5 @@ public class PieChartActivity extends AppCompatActivity {
             }
         });
     }
-
 
 }
