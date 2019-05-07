@@ -1,24 +1,16 @@
 package cs4330.cs.utep.edu.smashstats;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
-import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
@@ -31,10 +23,40 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static ArrayList<Character> characterList = new ArrayList<>();
+    public static ArrayList<Stage> stageList = new ArrayList<>();
+    public static ArrayList<Fight> fightList = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        characterList.add(new Character("MARTH"));
+
+        BottomNavigationView navigation = findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                Intent i = new Intent(MainActivity.this, CustomListActivity.class);
+                switch (item.getItemId()) {
+                    case R.id.characters:
+                        i.putExtra("name", "c");
+                        break;
+                    case R.id.stages:
+                        i.putExtra("name", "s");
+                        break;
+                    case R.id.fights:
+                        i.putExtra("name", "f");
+                        break;
+                }
+                startActivity(i);
+
+                return false;
+            }
+        });
 
         final PieChart pieChartPlayer = findViewById(R.id.piechartPlayer);
         final PieChart pieChartStage = findViewById(R.id.piechartStage);
@@ -138,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i = new Intent(MainActivity.this, AddFight.class);
+        startActivity(i);
         return (super.onOptionsItemSelected(item));
     }
 }

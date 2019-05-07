@@ -1,148 +1,195 @@
-<LinearLayout android:orientation="vertical"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="fill_parent"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="Add Fight"
-        android:textSize="22dp"/>
-
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_weight=".1">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Stage:"/>
-
-        <Spinner
-            android:id="@+id/spinnerStage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/stage_array">
-        </Spinner>
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Edit Fight"
+            android:textSize="22dp"/>
 
 
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight=".1">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_weight=".1">
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Character:"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Stage:"/>
 
-        <Spinner
-            android:id="@+id/spinnerCharacter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/character_array">
-        </Spinner>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_weight=".1">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Opponents Character:"/>
-
-        <Spinner
-            android:id="@+id/spinnerOpponent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/character_array">
-        </Spinner>
+            <Spinner
+                android:id="@+id/spinnerStage"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/stage_array">
+            </Spinner>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_weight=".1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight=".1">
 
-        <TextView
-            android:layout_marginTop="7dp"
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Did you Win?"/>
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radiogroup"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Your Character:"/>
+
+            <Spinner
+                android:id="@+id/spinnerCharacter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/character_array">
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight=".1">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Opponents Character:"/>
+
+            <Spinner
+                android:id="@+id/spinnerOpponent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/character_array">
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_weight=".1">
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Did you Win?"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yesWin"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noWin"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <RadioButton
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/yesWin"
-                android:text="Yes"/>
-            <RadioButton
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/addButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/noWin"
-                android:text="No"/>
+                android:layout_weight=".1"
+                android:text="Add" />
 
-        </RadioGroup>
 
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="Cancel" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="0dp"
-        android:layout_width="fill_parent"
-        android:layout_weight="1">
-
-        <TextView
-            android:layout_marginTop="7dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add"
-            android:id="@+id/addButton"
-            android:layout_weight=".1"/>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:id="@+id/cancelButton"
-            android:layout_weight = ".1"/>
-
-
-    </LinearLayout>
-
-</LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/main_menu" />
+</android.support.constraint.ConstraintLayout>
